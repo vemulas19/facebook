@@ -6,4 +6,9 @@ public class TestJavaClass {
 		System.out.println("This is testing");
 		return "done";
 	}
+	
+	public void m1(){
+		System.out.println("hellooooooooooooooo");
+	}
+	
 }

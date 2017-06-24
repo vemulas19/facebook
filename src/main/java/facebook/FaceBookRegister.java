@@ -15,7 +15,6 @@ public class FaceBookRegister {
 		
 		return "success";
 	}
-	
 	@RequestMapping(value="deleteIt", method=RequestMethod.POST)
 	public String deleteUser(){
 		System.out.println("Entered into delete User");
