@@ -10,9 +10,10 @@ public class FaceBookRegister {
 	@RequestMapping(value="registerFacebook", method=RequestMethod.POST)
 	public String saveUser(){
 		System.out.println("Entered into Save user");
-		
+		System.out.println("divya changes");
 		System.out.println("******Database saving code*****");
-		
+		System.out.println("venu changes...");
+		System.out.println("Venu modificatons");
 		return "success";
 	}
 	@RequestMapping(value="deleteIt", method=RequestMethod.POST)
