@@ -11,4 +11,7 @@ public class TestJavaClass {
 		System.out.println("hellooooooooooooooo");
 	}
 	
+	public void m2(){
+		System.out.println("haiiiiiiiii");
+	}
 }
