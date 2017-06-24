@@ -6,7 +6,8 @@ public class TestJavaClass {
 		System.out.println("This is testing");
 		return "done";
 	}
-	public void registerUser(){
-		System.out.println("im in register page");
+	public void m1(){
+		System.out.println("hellooooooooooooooo");
+    System.out.println("im in register page");
 	}
 }
