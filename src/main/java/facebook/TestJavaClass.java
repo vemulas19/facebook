@@ -7,11 +7,7 @@ public class TestJavaClass {
 		return "done";
 	}
 	
-	public void m1(){
-		System.out.println("hellooooooooooooooo");
-	}
-	
-	public void m2(){
-		System.out.println("haiiiiiiiii");
-	}
+public void m1(){
+	System.out.println("hiiii");
+}
 }
