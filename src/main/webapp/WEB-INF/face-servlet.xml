@@ -10,7 +10,8 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 	
-	<context:component-scan base-package="facebook" />
+	<context:component-scan base-package="com.facebook.controllers" />
+	<bean id="hdao" class="com.facebook.Hdao.HibernateDao"></bean>
 	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -21,5 +22,35 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
+	
+	<bean name="myDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    <property name="url" value="jdbc:mysql://localhost:3306/vijay" />
+    <property name="username" value="root" />
+    <property name="password" value="root1" />
+</bean>
+
+
+
+  <bean id="mysessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+    <property name="dataSource" ref="myDataSource"/>
+    <property name="hibernateProperties">
+       <props>
+         <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+         <prop key="hibernate.show_sql">true</prop>
+       </props>
+    </property>
+ 
+    <property name="annotatedClasses">
+	<list>
+		<value>com.facebook.pojos.User</value>
+	</list>
+    </property>
+
+    </bean>
+  
+   <bean id="template" class="org.springframework.orm.hibernate3.HibernateTemplate">  
+    <property name="sessionFactory" ref="mysessionFactory"></property>  
+    </bean>
 
 </beans>

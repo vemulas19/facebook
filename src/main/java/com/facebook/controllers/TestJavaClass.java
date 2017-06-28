@@ -1,4 +1,4 @@
-package facebook;
+package com.facebook.controllers;
 
 public class TestJavaClass {
 

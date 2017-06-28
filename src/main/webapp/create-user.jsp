@@ -10,15 +10,18 @@
 <form action="registerFacebook" method="post">
 	Name : <input type="text" name="name"/></br>
 	Email Id : <input type="text" name="mailId"/></br>
-	Mobile : <input type="text" name="password"/></br>
-	Password : <input type="password" name="repassword"/></br>
+	DOB: <input type="text" name="dateOfBirth"/></br>
+	Mobile : <input type="text" name="mobile"/></br>
+	Password : <input type="password" name="password"/></br>
+	Re-Password : <input type="password" name="repassword"/></br>
+	Location : <input type="text" name="location"/></br>
 	<input type="submit" value="Register"/>
 </form>
 
 
-<form action="deleteIt" method="post">
+<!-- <form action="deleteIt" method="post">
 Email Id : <input type="text" name="mailId"/></br>
 <input type="submit" value="Delete"/>
-</form>
+</form> -->
 </body>
 </html>
