@@ -34,6 +34,7 @@ public class FaceBookRegister {
 	
 	public String loginFlow(){
 		System.out.println("Login flow implemented");
+		System.out.println("Name validations");
 		return "showProfiles";
 	}
 }
