@@ -27,4 +27,8 @@ public class FaceBookRegister {
 		System.out.println("Update Logic!!");
 		return "myfile";
 	}
+	
+	public void registerUser(){
+		System.out.println("Registration is done");
+	}
 }
