@@ -31,4 +31,8 @@ public class FaceBookRegister {
 	public void registerUser(){
 		System.out.println("Registration is done");
 	}
+	
+	public void loginFlow(){
+		System.out.println("Login flow implemented");
+	}
 }
