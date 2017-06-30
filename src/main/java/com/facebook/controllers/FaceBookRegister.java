@@ -42,4 +42,15 @@ public class FaceBookRegister {
 		System.out.println("Update Logic!!");
 		return "myfile";
 	}
+	
+	public void registerUser(){
+		System.out.println("Registration is done");
+	}
+	
+	public String loginFlow(){
+		System.out.println("Login flow implemented");
+		System.out.println("Name validations");
+		System.out.println("mobile validation");
+		return "showProfiles";
+	}
 }

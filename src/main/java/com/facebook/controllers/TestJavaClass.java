@@ -12,4 +12,8 @@ public void m1(){
     System.out.println("im in register page");
 }
 
+public void m2(){
+	System.out.println("this is my first method");
+}
+
 }
