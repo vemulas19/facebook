@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Registration Successfully completed!!</h2>
-<form action="heloUpdateIt" method="post">
+<h2>${message}</h2>
+<!-- <form action="heloUpdateIt" method="post">
 Name : <input type="text" name="name"/></br>
 <input type="submit" value="Update"/>
-</form>
+</form> -->
 </body>
 </html>
